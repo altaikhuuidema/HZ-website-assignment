@@ -1,0 +1,55 @@
+body {
+  color: yellowgreen;
+  font-family: arial;
+  font-weight: lighter;
+  font-size: x-large;
+}
+
+h1 {
+  font-size: xxx-large;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+a {
+  color: yellowgreen;
+}
+
+
+.active {
+  font-weight: bold;
+  color: orange;
+}
+
+
+.index {
+  background-image: url(https://frutigeraeroarchive.org/images/wallpapers/perfect_hue/perfect_hue_134.jpg);
+  background-size: cover;
+}
+
+
+.other {
+  background-image: url(https://frutigeraeroarchive.org/images/wallpapers/perfect_hue/perfect_hue_134.jpg);
+  background-size: cover;
+}
+
+
+table {background-color: black; backdrop-filter: blur(10px);
+  border-collapse: collapse;
+  width: 80%;
+  margin: 40px auto 0;
+}
+
+th,
+td {
+  border: 3px solid yellowgreen;
+  padding: 10px;
+}
