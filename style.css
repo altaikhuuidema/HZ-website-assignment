@@ -1,0 +1,149 @@
+:root {
+  --panel: rgba(13, 22, 29, 0.96);
+  --text: #edf4f0;
+  --accent: #c7f36b;
+  --accent-strong: #e5ff9b;
+  --border: rgba(199, 243, 107, 0.2);
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  align-items: start;
+  color: var(--text);
+  background-image:
+    url("https://frutigeraeroarchive.org/images/wallpapers/perfect_hue/perfect_hue_134.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  box-sizing: border-box;
+  padding: 34px 18px;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(7, 14, 19, .96);
+  background-image: url("images/hzlogo_groot.png");
+  background-repeat: no-repeat;
+  background-position: center bottom 20px;
+  background-size: 200px auto;
+  border-right: 1px solid var(--border);
+}
+
+header h1 {
+  margin: 0 0 36px;
+  color: var(--accent);
+  font-size: 30px;
+  letter-spacing: .13em;
+  line-height: 1.25;
+  text-align: center;
+  overflow-wrap: anywhere;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+nav a {
+  display: block;
+  padding: 12px 14px;
+  color: #d8e5db;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: .04em;
+  border: 1px solid transparent;
+}
+
+nav a:hover {
+  color: var(--accent-strong);
+  background: rgba(199, 243, 107, .09);
+  border-color: var(--border);
+}
+
+nav a.active {
+  color: #11180a;
+  background: var(--accent);
+  border-color: var(--accent);
+}
+
+.socials {
+  margin-top: auto;
+  margin-bottom: 50px;
+  font-size: 28px;
+}
+
+.socials a {
+  font-size: 22px;
+}
+
+.icon {
+  margin-bottom: -7px;
+  width: 32px;
+  height: 32px;
+}
+
+main {
+  width: min(100% - 56px, 1100px);
+  margin: 42px auto;
+  padding: clamp(22px, 4vw, 42px);
+  background: var(--panel);
+  border: 1px solid rgba(255, 255, 255, .1);
+  line-height: 1.75;
+  overflow: hidden;
+}
+
+main img {
+  float: left;
+  width: 300px;
+  max-width: 38%;
+  margin: 0 18px 14px 0;
+  border: 1px solid var(--border);
+}
+
+table {
+  width: calc(100% - 56px);
+  max-width: 1100px;
+  margin: 42px auto;
+  background: var(--panel);
+  border-spacing: 0;
+  color: var(--text);
+  font-size: 15px;
+  border: 1px solid rgba(255, 255, 255, .12);
+}
+
+th {
+  font-weight: 700;
+  text-align: left;
+  padding: 15px 16px;
+}
+
+td {
+  padding: 14px 16px;
+  border-bottom: 1px solid rgba(255, 255, 255, .08);
+}
+
+.blog-post {
+  display: flex;
+  align-items: center;
+  margin: 16px 0;
+  padding: 6px 20px;
+  background: #19252d;
+  border: 1px solid rgba(255, 255, 255, .1);
+}
+
+.blog-post a {
+  color: var(--accent);
+  text-decoration: none;
+}
